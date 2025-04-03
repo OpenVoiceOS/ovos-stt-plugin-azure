@@ -7,6 +7,7 @@ class OVOSAzureSTT(STT):
         super().__init__(config)
         self.key = self.config.get("key")
         self.region = self.config.get("region", "westeurope")
+        self.profanity = self.config.get("profanity", "raw")
 
     def execute(self, audio, language=None):
         lang = language or self.lang
@@ -17,7 +18,7 @@ class OVOSAzureSTT(STT):
         url = f"https://{self.region}.stt.speech.microsoft.com/speech/recognition/conversation/cognitiveservices/v1"
         response = requests.request("POST", url, headers=headers,
                                     data=audio.get_wav_data(),
-                                    params={"language": lang}).json()
+                                    params={"language": lang, "profanity": self.profanity}).json()
         return response["DisplayText"]
 
 
