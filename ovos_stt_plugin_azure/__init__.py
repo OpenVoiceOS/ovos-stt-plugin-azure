@@ -1,5 +1,6 @@
 import requests
 from ovos_plugin_manager.stt import STT
+from ovos_utils import classproperty
 
 
 class OVOSAzureSTT(STT):
@@ -20,6 +21,16 @@ class OVOSAzureSTT(STT):
                                     data=audio.get_wav_data(),
                                     params={"language": lang, "profanity": self.profanity}).json()
         return response["DisplayText"]
+
+    @classproperty
+    def available_languages(cls) -> set:
+        """Return languages supported by this TTS implementation in this state
+        This property should be overridden by the derived class to advertise
+        what languages that engine supports.
+        Returns:
+            set: supported languages
+        """
+        return set()  # TODO
 
 
 if __name__ == "__main__":
