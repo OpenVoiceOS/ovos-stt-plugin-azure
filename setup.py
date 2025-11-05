@@ -55,7 +55,7 @@ with open("readme.md", "r") as f:
 
 
 setup(
-    name='ovos-stt-plugin-azure',
+    name='ovos_stt_plugin_azure',
     version=get_version(),
     description='ovos azure stt plugin for mycroft',
     long_description=long_description,
