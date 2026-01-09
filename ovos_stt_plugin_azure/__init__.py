@@ -1,6 +1,8 @@
 import requests
 from ovos_plugin_manager.stt import STT
 from ovos_utils import classproperty
+from ovos_plugin_manager.utils.audio import AudioData, AudioFile
+from typing import Optional
 
 
 class OVOSAzureSTT(STT):
@@ -10,7 +12,7 @@ class OVOSAzureSTT(STT):
         self.region = self.config.get("region", "westeurope")
         self.profanity = self.config.get("profanity", "raw")
 
-    def execute(self, audio, language=None):
+    def execute(self, audio: AudioData, language: Optional[str]=None):
         lang = language or self.lang
         headers = {
             'Content-type': 'audio/wav;codec="audio/pcm";',
@@ -34,7 +36,6 @@ class OVOSAzureSTT(STT):
 
 
 if __name__ == "__main__":
-    from speech_recognition import Recognizer, AudioFile
     import os
 
     engine = OVOSAzureSTT({"key": 'XXX'})
@@ -42,7 +43,7 @@ if __name__ == "__main__":
     # inference
     jfk = f"{os.path.dirname(__file__)}/jfk.wav"
     with AudioFile(jfk) as source:
-        audio = Recognizer().record(source)
+        audio = source.read()
 
     pred = engine.execute(audio, language="en-us")
     print(pred)
