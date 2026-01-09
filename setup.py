@@ -57,7 +57,7 @@ with open("readme.md", "r") as f:
 setup(
     name='ovos_stt_plugin_azure',
     version=get_version(),
-    description='ovos azure stt plugin for mycroft',
+    description='ovos azure stt plugin for OpenVoiceO',
     long_description=long_description,
     long_description_content_type="text/markdown",
     url='https://github.com/OpenVoiceOS/ovos-stt-azure-plugin',
@@ -72,14 +72,8 @@ setup(
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
-        'Topic :: Text Processing :: Linguistic',
         'License :: OSI Approved :: Apache Software License',
-
-        'Programming Language :: Python :: 3.7',
-        'Programming Language :: Python :: 3.8',
-        'Programming Language :: Python :: 3.9',
-        'Programming Language :: Python :: 3.10',
     ],
     keywords='mycroft OpenVoiceOS OVOS plugin stt',
-    entry_points={'mycroft.plugin.stt': PLUGIN_ENTRY_POINT}
+    entry_points={'opm.stt': PLUGIN_ENTRY_POINT}
 )
