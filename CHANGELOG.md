@@ -1,8 +1,28 @@
 # Changelog
 
-## [V0.0.0a1](https://github.com/OpenVoiceOS/ovos-stt-azure-plugin/tree/V0.0.0a1) (2023-08-04)
+## [0.0.0a3](https://github.com/OpenVoiceOS/ovos-stt-plugin-azure/tree/0.0.0a3) (2026-06-17)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-azure-plugin/compare/d774a9ae56b9f702ebde3c1320b2b75e359a3ce9...V0.0.0a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-azure/compare/V0.0.0a2...0.0.0a3)
+
+**Merged pull requests:**
+
+- chore: add missing shared CI workflows [\#14](https://github.com/OpenVoiceOS/ovos-stt-plugin-azure/pull/14) ([JarbasAl](https://github.com/JarbasAl))
+- refactor: modernize/drop speech\_recognition [\#13](https://github.com/OpenVoiceOS/ovos-stt-plugin-azure/pull/13) ([JarbasAl](https://github.com/JarbasAl))
+- chore\(deps\): update actions/setup-python action to v6 [\#10](https://github.com/OpenVoiceOS/ovos-stt-plugin-azure/pull/10) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update actions/checkout action to v6 [\#9](https://github.com/OpenVoiceOS/ovos-stt-plugin-azure/pull/9) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update dependency python to 3.14 [\#5](https://github.com/OpenVoiceOS/ovos-stt-plugin-azure/pull/5) ([renovate[bot]](https://github.com/apps/renovate))
+- chore: Configure Renovate [\#4](https://github.com/OpenVoiceOS/ovos-stt-plugin-azure/pull/4) ([renovate[bot]](https://github.com/apps/renovate))
+- Update requirements.txt [\#3](https://github.com/OpenVoiceOS/ovos-stt-plugin-azure/pull/3) ([JarbasAl](https://github.com/JarbasAl))
+- fix: compatibility with ovos-plugin-manager 1.X.X [\#2](https://github.com/OpenVoiceOS/ovos-stt-plugin-azure/pull/2) ([JarbasAl](https://github.com/JarbasAl))
+- disable profanity filter by default and add config [\#1](https://github.com/OpenVoiceOS/ovos-stt-plugin-azure/pull/1) ([rudism](https://github.com/rudism))
+
+## [V0.0.0a2](https://github.com/OpenVoiceOS/ovos-stt-plugin-azure/tree/V0.0.0a2) (2023-08-04)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-azure/compare/V0.0.0a1...V0.0.0a2)
+
+## [V0.0.0a1](https://github.com/OpenVoiceOS/ovos-stt-plugin-azure/tree/V0.0.0a1) (2023-08-04)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-azure/compare/d774a9ae56b9f702ebde3c1320b2b75e359a3ce9...V0.0.0a1)
 
 
 
