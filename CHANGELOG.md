@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.0a4](https://github.com/OpenVoiceOS/ovos-stt-plugin-azure/tree/0.0.0a4) (2026-08-01)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-azure/compare/0.0.0a3...0.0.0a4)
+
+**Merged pull requests:**
+
+- docs: rewrite README in Simplified Technical English [\#15](https://github.com/OpenVoiceOS/ovos-stt-plugin-azure/pull/15) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.0.0a3](https://github.com/OpenVoiceOS/ovos-stt-plugin-azure/tree/0.0.0a3) (2026-06-17)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-azure/compare/V0.0.0a2...0.0.0a3)
